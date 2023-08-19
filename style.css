@@ -156,14 +156,3 @@ body {
   top: 35px;
   right: -51px;  
 }
-
-.gift {
-  position: fixed;
-  bottom: 25px;
-  right: 25px;
-  font-size: 1.5rem;
-  color: white;
-  background-color: #3073B7;
-  padding: 1rem 2rem;
-  border-radius: 50px;
-}
