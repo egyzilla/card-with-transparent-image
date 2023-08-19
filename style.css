@@ -1,0 +1,169 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@400;500;600&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 10px;
+}
+
+body {
+  font-family: 'Noto Kufi Arabic', sans-serif;
+  background-color: #EEEEEE;
+}
+
+.card {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
+}
+
+.card-box {
+  width: 350px;
+  height: auto;
+  position: relative;
+  background-color: white;
+  padding: 1rem 2rem;
+  border: 2px solid black;
+  box-shadow: 5px 5px 5px -5px rgba(43, 43, 43, 0.5);
+  border-radius: 10px;
+  text-align: center;
+}
+
+.person {
+  width: 180px;
+  position: absolute;
+  z-index: -1;
+  top: -165px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.info h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  margin-bottom: -10px;
+}
+
+.name {
+  font-size: 2.5rem;
+  color: #3073B7;
+}
+
+.nickname {
+  position: absolute;
+  top: -15px;
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+  border: 2px solid white;
+  font-size: 1.2rem;
+  padding: 0.2rem 0.9rem;
+  letter-spacing: 2px;
+}
+
+.job-title {
+  font-size: 1.3rem;
+  color: #b4b4b4;
+  margin-bottom: -5px;
+}
+
+.divider {
+  width: 100%;
+  height: 2px;
+  background-color: #EEEEEE;
+  margin: 0 auto;
+  margin-bottom: 0px;
+  margin-top: 10px;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin-top: 10px;
+}
+
+.link {
+  position: relative;
+}
+
+.link a {
+  text-decoration: none;
+  font-size: 2rem;
+  color: #3073B7;
+  transition: .3s ease;
+}
+
+.link a:hover {
+  color: #123;
+}
+
+.tooltip {
+  visibility: hidden;
+  position: absolute;
+  background-color: #123;
+  color: #EEEEEE;
+  padding: .3rem;
+  border-radius: 3px;
+  font-weight: bold;
+}
+
+.tooltip::after {
+  content: "";
+  position: absolute;
+  top: -10px;
+  right: 50%;
+  transform: translate(50%);
+  border: 5px solid;
+  border-color: transparent transparent black transparent;
+}
+
+.link:hover .tooltip {
+  visibility: visible;
+}
+
+.github {
+  top: 35px;
+  right: -46px;
+  width: 110px;
+}
+
+.codepen {
+  width: 117px;
+  top: 35px;
+  right: -49px;  
+}
+
+.instagram {
+  width: 123px;
+  top: 35px;
+  right: -53px;  
+}
+
+.telegram {
+  width: 120px;
+  top: 35px;
+  right: -51px;  
+}
+
+.gift {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  font-size: 1.5rem;
+  color: white;
+  background-color: #3073B7;
+  padding: 1rem 2rem;
+  border-radius: 50px;
+}
